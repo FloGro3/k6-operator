@@ -1,5 +1,5 @@
 # Current Operator version
-VERSION ?= 0.0.13
+VERSION ?= 0.0.14
 # Default bundle image tag
 BUNDLE_IMG ?= k6-controller-bundle:$(VERSION)
 # Options for 'bundle-build'
@@ -14,7 +14,7 @@ BUNDLE_METADATA_OPTS ?= $(BUNDLE_CHANNELS) $(BUNDLE_DEFAULT_CHANNEL)
 # Image to use for building Go
 GO_BUILDER_IMG ?= "golang:1.19"
 # Image URL to use all building/pushing image targets
-IMG_NAME ?= ghcr.io/grafana/k6-operator
+IMG_NAME ?= ghcr.io/flogro3/k6-operator
 IMG_TAG ?= latest
 # Default dockerfile to build
 DOCKERFILE ?= "Dockerfile.controller"
